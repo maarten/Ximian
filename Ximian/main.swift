@@ -134,7 +134,7 @@ masterPlayListDict.addChild(name: "key", value: "PlayList Items", attributes: [:
 masterPlayListDict.addTrackList(tracks: trackData)
 
 // [5] PLAYLISTS
-let playListData = db.query(sql: "SELECT * FROM playlist ORDER BY pindex")
+let playListData = db.query(sql: "SELECT p.playlist_id, p.name, p.pindex, plfp.playlistfolder_id, p.smartpredicate, p.smart, p.folder FROM playlist p LEFT JOIN playlistfolderplaylist plfp ON p.playlist_id = plfp.playlist_id ORDER BY plfp.playlistfolder_id, p.pindex")
 var playlistTracks = [Int: OrderedSet<Int>]()
 var playlistDetails = [Int: AEXMLElement]()
 var playlistParents = [Int:Int]()
@@ -154,9 +154,9 @@ for row in playListData {
     playlistDict.addStringKey(key: "Playlist Persistent ID", val: String(format: "%0.16X", playlistId))
     playlistDict.addBoolKey(key: "All Items", val: true)
     
-    if let parentFolder = db.query(sql: "SELECT * FROM playlistfolderplaylist WHERE playlist_id = \(row["playlist_id"] as! Int)").first {
-        playlistDict.addStringKey(key: "Parent Persistent ID", val: String(format: "%0.16X", parentFolder["playlistfolder_id"] as! Int + 1))
-        playlistParents[playlistId] = (parentFolder["playlistfolder_id"] as! Int) + 1
+    if let parentFolderId = row["playlistfolder_id"] as! Int? {
+        playlistDict.addStringKey(key: "Parent Persistent ID", val: String(format: "%0.16X", parentFolderId + 1))
+        playlistParents[playlistId] = parentFolderId + 1
     }
     
     if row["folder"] as! Int == 1 {

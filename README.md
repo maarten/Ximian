@@ -30,7 +30,7 @@ or you can clone the repository and build it yourself.
 ## Usage
 
 ```
-Usage: ../DerivedData/Ximian/Build/Products/Debug/Ximian [options]
+Usage: ./Ximian [options]
   -s, --swinsian:
       The path to the Swinsian sql file. Defaults to ~/Library/Application Support/Swinsian/Library.sqlite
   -x, --xml:
