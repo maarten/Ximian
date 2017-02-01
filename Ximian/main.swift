@@ -50,11 +50,6 @@ do {
     if(iTunesMusicFolder.value == nil) {
         _ = iTunesMusicFolder.setValue([NSString(string: defaultItunesMusicFolder).expandingTildeInPath])
     }
-    
-    if(printUsage.value == true) {
-        cli.printUsage()
-        exit(EX_USAGE)
-    }
 } catch {
     cli.printUsage()
     exit(EX_USAGE);
@@ -77,7 +72,7 @@ rootDict.addDateKey(key: "Date", val: Date())
 rootDict.addIntegerKey(key: "Features", val: 5)
 rootDict.addBoolKey(key: "Show Content Ratings", val: true)
 rootDict.addStringKey(key: "Library Persistent ID", val: "0000000000000002")
-
+rootDict.addStringKey(key: "Music Folder", val: "file://\(iTunesMusicFolder.value!)".addingPercentEncoding(withAllowedCharacters: .urlPathAllowed))
 
 // [2] Add tracks
 rootDict.addChild(name: "key", value: "Tracks", attributes: [:])
@@ -208,11 +203,6 @@ for (playlistId, tracks) in playlistTracks {
     }
 }
 
-// Add Music Folder, we add it here because for some reason iTunes adds it to the end. XML parsing shouldn't care,
-// but there are many parsers with specific quirks that may rely on this kind of arbitrary stuff
-rootDict.addStringKey(key: "Music Folder", val: "file://\(iTunesMusicFolder.value!)".addingPercentEncoding(withAllowedCharacters: .urlPathAllowed))
-
-//print(xml.xml)
 do {
     try xml.xml.write(toFile: iTunesXMLPath.value!, atomically: false, encoding: String.Encoding.utf8)
     print("Written iTunes XML to \(iTunesXMLPath.value!)")
