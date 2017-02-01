@@ -23,7 +23,7 @@ delete it and relaunch iTunes. Do not delete the .itl file.
 
 ## Installation
 
-You can download a build of Ximian (just a binary) here [[]]
+You can download a build of Ximian (just a binary) [here](https://github.com/maarten/Ximian/releases)
 
 or you can clone the repository and build it yourself.
 
