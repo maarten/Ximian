@@ -1,0 +1,347 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FEA831231E3B33EE004D258B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA831221E3B33EE004D258B /* main.swift */; };
+		FEA8312F1E3B3408004D258B /* CommandLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA8312A1E3B3408004D258B /* CommandLine.swift */; };
+		FEA831301E3B3408004D258B /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA8312B1E3B3408004D258B /* Option.swift */; };
+		FEA831311E3B3408004D258B /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA8312C1E3B3408004D258B /* SQLiteDB.swift */; };
+		FEA831331E3B3408004D258B /* String-Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA8312E1E3B3408004D258B /* String-Extras.swift */; };
+		FEA831381E3B3433004D258B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FEA831371E3B3433004D258B /* libsqlite3.tbd */; };
+		FEA8313A1E3B35B3004D258B /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA831391E3B35B3004D258B /* StringExtensions.swift */; };
+		FEA831401E3B657E004D258B /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA8313B1E3B657E004D258B /* Document.swift */; };
+		FEA831411E3B657E004D258B /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA8313C1E3B657E004D258B /* Element.swift */; };
+		FEA831421E3B657E004D258B /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA8313D1E3B657E004D258B /* Error.swift */; };
+		FEA831431E3B657E004D258B /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA8313E1E3B657E004D258B /* Options.swift */; };
+		FEA831471E3B8B87004D258B /* XimianExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA831461E3B8B87004D258B /* XimianExtensions.swift */; };
+		FEA8314B1E3DDF5D004D258B /* SwinsianNSPredicateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA8314A1E3DDF5D004D258B /* SwinsianNSPredicateExtensions.swift */; };
+		FEA8314D1E410FD9004D258B /* OrderedSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA8314C1E410FD9004D258B /* OrderedSet.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FEA8311D1E3B33EE004D258B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FEA8311F1E3B33EE004D258B /* Ximian */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Ximian; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEA831221E3B33EE004D258B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		FEA831291E3B3408004D258B /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		FEA8312A1E3B3408004D258B /* CommandLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandLine.swift; sourceTree = "<group>"; };
+		FEA8312B1E3B3408004D258B /* Option.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		FEA8312C1E3B3408004D258B /* SQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDB.swift; sourceTree = "<group>"; };
+		FEA8312E1E3B3408004D258B /* String-Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String-Extras.swift"; sourceTree = "<group>"; };
+		FEA831371E3B3433004D258B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		FEA831391E3B35B3004D258B /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		FEA8313B1E3B657E004D258B /* Document.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Document.swift; path = AEXML/Document.swift; sourceTree = "<group>"; };
+		FEA8313C1E3B657E004D258B /* Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Element.swift; path = AEXML/Element.swift; sourceTree = "<group>"; };
+		FEA8313D1E3B657E004D258B /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Error.swift; path = AEXML/Error.swift; sourceTree = "<group>"; };
+		FEA8313E1E3B657E004D258B /* Options.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Options.swift; path = AEXML/Options.swift; sourceTree = "<group>"; };
+		FEA831461E3B8B87004D258B /* XimianExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XimianExtensions.swift; sourceTree = "<group>"; };
+		FEA8314A1E3DDF5D004D258B /* SwinsianNSPredicateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwinsianNSPredicateExtensions.swift; sourceTree = "<group>"; };
+		FEA8314C1E410FD9004D258B /* OrderedSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderedSet.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FEA8311C1E3B33EE004D258B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEA831381E3B3433004D258B /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FEA831161E3B33EE004D258B = {
+			isa = PBXGroup;
+			children = (
+				FEA831211E3B33EE004D258B /* Ximian */,
+				FEA831201E3B33EE004D258B /* Products */,
+				FEA831361E3B3433004D258B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FEA831201E3B33EE004D258B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEA8311F1E3B33EE004D258B /* Ximian */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEA831211E3B33EE004D258B /* Ximian */ = {
+			isa = PBXGroup;
+			children = (
+				FEA831451E3B6583004D258B /* AEXML */,
+				FEA831351E3B3419004D258B /* CommandLine */,
+				FEA831341E3B340E004D258B /* SQLiteDB */,
+				FEA831221E3B33EE004D258B /* main.swift */,
+				FEA831461E3B8B87004D258B /* XimianExtensions.swift */,
+				FEA8314A1E3DDF5D004D258B /* SwinsianNSPredicateExtensions.swift */,
+				FEA8314C1E410FD9004D258B /* OrderedSet.swift */,
+			);
+			path = Ximian;
+			sourceTree = "<group>";
+		};
+		FEA831341E3B340E004D258B /* SQLiteDB */ = {
+			isa = PBXGroup;
+			children = (
+				FEA8312C1E3B3408004D258B /* SQLiteDB.swift */,
+				FEA8312E1E3B3408004D258B /* String-Extras.swift */,
+				FEA831291E3B3408004D258B /* Bridging-Header.h */,
+			);
+			name = SQLiteDB;
+			sourceTree = "<group>";
+		};
+		FEA831351E3B3419004D258B /* CommandLine */ = {
+			isa = PBXGroup;
+			children = (
+				FEA8312A1E3B3408004D258B /* CommandLine.swift */,
+				FEA8312B1E3B3408004D258B /* Option.swift */,
+				FEA831391E3B35B3004D258B /* StringExtensions.swift */,
+			);
+			name = CommandLine;
+			sourceTree = "<group>";
+		};
+		FEA831361E3B3433004D258B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FEA831371E3B3433004D258B /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEA831451E3B6583004D258B /* AEXML */ = {
+			isa = PBXGroup;
+			children = (
+				FEA8313B1E3B657E004D258B /* Document.swift */,
+				FEA8313C1E3B657E004D258B /* Element.swift */,
+				FEA8313D1E3B657E004D258B /* Error.swift */,
+				FEA8313E1E3B657E004D258B /* Options.swift */,
+			);
+			name = AEXML;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FEA8311E1E3B33EE004D258B /* Ximian */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEA831261E3B33EE004D258B /* Build configuration list for PBXNativeTarget "Ximian" */;
+			buildPhases = (
+				FEA8311B1E3B33EE004D258B /* Sources */,
+				FEA8311C1E3B33EE004D258B /* Frameworks */,
+				FEA8311D1E3B33EE004D258B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ximian;
+			productName = Ximian;
+			productReference = FEA8311F1E3B33EE004D258B /* Ximian */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEA831171E3B33EE004D258B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Maarten Engelen";
+				TargetAttributes = {
+					FEA8311E1E3B33EE004D258B = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FEA8311A1E3B33EE004D258B /* Build configuration list for PBXProject "Ximian" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FEA831161E3B33EE004D258B;
+			productRefGroup = FEA831201E3B33EE004D258B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEA8311E1E3B33EE004D258B /* Ximian */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FEA8311B1E3B33EE004D258B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEA831471E3B8B87004D258B /* XimianExtensions.swift in Sources */,
+				FEA8313A1E3B35B3004D258B /* StringExtensions.swift in Sources */,
+				FEA831231E3B33EE004D258B /* main.swift in Sources */,
+				FEA831411E3B657E004D258B /* Element.swift in Sources */,
+				FEA831331E3B3408004D258B /* String-Extras.swift in Sources */,
+				FEA831311E3B3408004D258B /* SQLiteDB.swift in Sources */,
+				FEA831301E3B3408004D258B /* Option.swift in Sources */,
+				FEA8314B1E3DDF5D004D258B /* SwinsianNSPredicateExtensions.swift in Sources */,
+				FEA831401E3B657E004D258B /* Document.swift in Sources */,
+				FEA831421E3B657E004D258B /* Error.swift in Sources */,
+				FEA8314D1E410FD9004D258B /* OrderedSet.swift in Sources */,
+				FEA831431E3B657E004D258B /* Options.swift in Sources */,
+				FEA8312F1E3B3408004D258B /* CommandLine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FEA831241E3B33EE004D258B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FEA831251E3B33EE004D258B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FEA831271E3B33EE004D258B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ximian/Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FEA831281E3B33EE004D258B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ximian/Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FEA8311A1E3B33EE004D258B /* Build configuration list for PBXProject "Ximian" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEA831241E3B33EE004D258B /* Debug */,
+				FEA831251E3B33EE004D258B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEA831261E3B33EE004D258B /* Build configuration list for PBXNativeTarget "Ximian" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEA831271E3B33EE004D258B /* Debug */,
+				FEA831281E3B33EE004D258B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FEA831171E3B33EE004D258B /* Project object */;
+}
