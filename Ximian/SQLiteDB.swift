@@ -80,8 +80,8 @@ class SQLiteDB:NSObject {
 		// Set up essentials
 		queue = DispatchQueue(label:QUEUE_LABEL, attributes:[])
 		// You need to set the locale in order for the 24-hour date format to work correctly on devices where 24-hour format is turned off
-		fmt.locale = NSLocale(localeIdentifier:"en_US_POSIX") as Locale!
-		fmt.timeZone = NSTimeZone(forSecondsFromGMT:0) as TimeZone!
+		fmt.locale = NSLocale(localeIdentifier:"en_US_POSIX") as Locale
+		fmt.timeZone = NSTimeZone(forSecondsFromGMT:0) as TimeZone
 		fmt.dateFormat = "yyyy-MM-dd HH:mm:ss"
 		// Open the DB
 		let cpath = path.cString(using: String.Encoding.utf8)
@@ -153,16 +153,16 @@ class SQLiteDB:NSObject {
 			for ndx in 1...cnt {
 //				NSLog("Binding: \(params![ndx-1]) at Index: \(ndx)")
 				// Check for data types
-				if let txt = params![ndx-1] as? String {
+				if let txt = params![Int(ndx)-1] as? String {
 					flag = sqlite3_bind_text(stmt, CInt(ndx), txt, -1, SQLITE_TRANSIENT)
-				} else if let data = params![ndx-1] as? NSData {
+				} else if let data = params![Int(ndx)-1] as? NSData {
 					flag = sqlite3_bind_blob(stmt, CInt(ndx), data.bytes, CInt(data.length), SQLITE_TRANSIENT)
-				} else if let date = params![ndx-1] as? NSDate {
+				} else if let date = params![Int(ndx)-1] as? NSDate {
 					let txt = fmt.string(from: date as Date)
 					flag = sqlite3_bind_text(stmt, CInt(ndx), txt, -1, SQLITE_TRANSIENT)
-				} else if let val = params![ndx-1] as? Double {
+				} else if let val = params![Int(ndx)-1] as? Double {
 					flag = sqlite3_bind_double(stmt, CInt(ndx), CDouble(val))
-				} else if let val = params![ndx-1] as? Int {
+				} else if let val = params![Int(ndx)-1] as? Int {
 					flag = sqlite3_bind_int(stmt, CInt(ndx), CInt(val))
 				} else {
 					flag = sqlite3_bind_null(stmt, CInt(ndx))
